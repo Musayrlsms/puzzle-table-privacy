@@ -1,34 +1,326 @@
-# Puzzle Table – Gizlilik Politikası
 
-**Son güncelleme:** 3 Kasım 2026
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101827">
+<meta name="description" content="Puzzle Table gizlilik politikası.">
+<title>Gizlilik Politikası | Puzzle Table</title>
 
-Puzzle Table kullanıcılarının gizliliğine önem verir. Bu gizlilik politikası, uygulamayı kullanırken kullanıcı bilgilerinin nasıl işlendiğini açıklar.
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-### 1. Kişisel Verilerin Toplanması
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, sans-serif;
+    background: #f3f5fa;
+    color: #182033;
+    line-height: 1.8;
+}
 
-Puzzle Table, kullanıcılarından ad, soyad, e-posta adresi, telefon numarası veya benzeri kişisel bilgileri talep etmez.
+.hero {
+    background:
+        radial-gradient(circle at 80% 5%, #403a7d, transparent 35%),
+        #101827;
+    color: white;
+    padding: 65px 20px 85px;
+}
 
-Uygulama içerisinde gerçekleştirilen oyun ilerlemesi, tamamlanan bulmacalar ve kullanıcı tercihleri gibi bilgiler yalnızca kullanıcının kendi cihazında yerel olarak saklanır.
+.container {
+    max-width: 850px;
+    width: calc(100% - 36px);
+    margin: auto;
+}
 
-### 2. Verilerin Paylaşılması
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 38px;
+    font-weight: 700;
+    font-size: 19px;
+}
 
-Uygulama tarafından cihazda saklanan oyun verileri herhangi bir sunucuya gönderilmez, üçüncü taraflarla paylaşılmaz veya satılmaz.
+.logo {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    background: #746cf0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
 
-### 3. Veri Güvenliği
+.eyebrow {
+    color: #c9c6ff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 
-Oyun verileri kullanıcının cihazında saklanır. Uygulamanın silinmesi veya cihazdaki uygulama verilerinin temizlenmesi durumunda bu kayıtlar kaybolabilir.
+h1 {
+    font-size: clamp(34px, 6vw, 48px);
+    line-height: 1.2;
+    margin: 12px 0;
+    letter-spacing: -1px;
+}
 
-### 4. Çocukların Gizliliği
+.intro {
+    color: #d6d9e5;
+    max-width: 620px;
+    font-size: 17px;
+}
 
-Uygulama, çocuklardan bilerek kişisel bilgi toplamaz.
+.date {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 6px 14px;
+    border: 1px solid #ffffff35;
+    border-radius: 30px;
+    font-size: 13px;
+    color: #e5e7ef;
+}
 
-### 5. Gizlilik Politikasındaki Değişiklikler
+main {
+    margin-top: -35px;
+    padding-bottom: 45px;
+}
 
-Bu gizlilik politikası, uygulamanın özelliklerinde veya veri işleme yöntemlerinde değişiklik olması durumunda güncellenebilir. Güncel politika ilgili web sayfasında yayımlanır.
+.content {
+    background: white;
+    border: 1px solid #e7eaf1;
+    border-radius: 20px;
+    padding: clamp(24px, 5vw, 44px);
+    box-shadow: 0 16px 45px #1b24400d;
+}
 
-### 6. İletişim
+.summary {
+    display: flex;
+    gap: 14px;
+    background: #f0efff;
+    border: 1px solid #e3e0ff;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 30px;
+    color: #38346f;
+}
 
-Gizlilik politikası hakkında sorularınız için aşağıdaki iletişim adresinden bize ulaşabilirsiniz:
+.summary p {
+    margin: 0;
+    color: #38346f;
+}
 
-**Geliştirici:** LumaPlay Studio  
-**E-posta:** musa.yerlesmis.tr@gmail.com
+section {
+    border-top: 1px solid #e7eaf1;
+    padding: 23px 0;
+}
+
+section:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+
+h2 {
+    font-size: 19px;
+    margin-bottom: 9px;
+    color: #182033;
+}
+
+p {
+    color: #475467;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #655ce2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contact {
+    margin-top: 14px;
+    padding: 18px;
+    background: #f8f9fc;
+    border: 1px solid #e7eaf1;
+    border-radius: 12px;
+}
+
+footer {
+    text-align: center;
+    color: #667085;
+    font-size: 13px;
+    padding: 0 20px 35px;
+}
+
+@media(max-width: 520px) {
+    .hero {
+        padding-top: 45px;
+    }
+
+    .content {
+        border-radius: 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="container">
+
+        <div class="brand">
+            <div class="logo">🧩</div>
+            <span>Puzzle Table</span>
+        </div>
+
+        <div class="eyebrow">LumaPlay Studio</div>
+
+        <h1>Gizlilik Politikası</h1>
+
+        <p class="intro">
+            Puzzle Table uygulamasını kullanırken bilgilerinizin
+            nasıl işlendiğini ve oyun verilerinizin nasıl
+            korunduğunu açıklıyoruz.
+        </p>
+
+        <span class="date">
+            Son güncelleme: 3 Kasım 2026
+        </span>
+
+    </div>
+</header>
+
+<main class="container">
+<article class="content">
+
+    <div class="summary">
+        <span>🔒</span>
+        <p>
+            <strong>Kısaca:</strong>
+            Puzzle Table oyun ilerlemenizi ve tercihlerinizi
+            cihazınızda saklar. Bu bilgiler tarafımızdan bir
+            sunucuya gönderilmez veya üçüncü taraflarla paylaşılmaz.
+        </p>
+    </div>
+
+    <section>
+        <h2>1. Hangi Veriler Saklanır?</h2>
+
+        <p>
+            Uygulama; oyun ilerlemesi, tamamlanan bulmacalar ve
+            uygulama tercihleri gibi oyunun çalışması için gerekli
+            bilgileri cihazınızda yerel olarak saklayabilir.
+        </p>
+
+        <p>
+            Puzzle Table mevcut sürümünde kullanıcı hesabı
+            oluşturmanızı istemez ve ad, soyad, e-posta adresi
+            veya telefon numarası gibi bilgileri doğrudan talep etmez.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. Veriler Nasıl Kullanılır?</h2>
+
+        <p>
+            Cihazınızda saklanan oyun verileri yalnızca oyun
+            ilerlemenizi korumak ve uygulama tercihlerinizi
+            hatırlamak amacıyla kullanılır. Bu veriler tarafımızdan
+            uzaktaki sunuculara aktarılmaz.
+        </p>
+    </section>
+
+    <section>
+        <h2>3. Verilerin Paylaşılması</h2>
+
+        <p>
+            Uygulama tarafından yerel olarak saklanan oyun verileri
+            tarafımızdan üçüncü taraflara satılmaz veya paylaşılmaz.
+            Uygulamanın ileride yeni hizmetler ya da üçüncü taraf
+            yazılım bileşenleri kullanması durumunda bu politika
+            ilgili değişiklikleri yansıtacak şekilde güncellenir.
+        </p>
+    </section>
+
+    <section>
+        <h2>4. Verilerin Saklanması ve Silinmesi</h2>
+
+        <p>
+            Oyun verileri cihazınızda tutulur. Uygulama verilerini
+            cihazınızın ayarlarından temizleyerek veya uygulamayı
+            kaldırarak bu yerel kayıtları silebilirsiniz.
+        </p>
+    </section>
+
+    <section>
+        <h2>5. Veri Güvenliği</h2>
+
+        <p>
+            Oyun kayıtları uygulamanın yerel depolama alanında
+            tutulur. Cihazınızın ekran kilidi ve güvenlik ayarlarını
+            kullanmanızı öneririz. Cihazınıza erişimi olan kişilerin
+            cihazda tutulan verilere erişebileceğini unutmayın.
+        </p>
+    </section>
+
+    <section>
+        <h2>6. Çocukların Gizliliği</h2>
+
+        <p>
+            Puzzle Table, çocuklardan bilerek kişisel bilgi
+            toplamak amacıyla tasarlanmamıştır. Uygulamanın hedef
+            kitlesi veya özellikleri değişirse çocuklara ilişkin
+            geçerli platform gereklilikleri ayrıca değerlendirilir.
+        </p>
+    </section>
+
+    <section>
+        <h2>7. Gizlilik Politikası Değişiklikleri</h2>
+
+        <p>
+            Uygulamanın özellikleri veya veri işleme yöntemleri
+            değişirse bu Gizlilik Politikası güncellenebilir.
+            Güncel sürüm bu web sayfasında yayımlanır.
+        </p>
+    </section>
+
+    <section>
+        <h2>8. İletişim</h2>
+
+        <p>
+            Bu politika veya gizlilik uygulamalarımız hakkında
+            sorularınız varsa geliştiriciyle iletişime geçebilirsiniz.
+        </p>
+
+        <div class="contact">
+            <strong>LumaPlay Studio</strong><br>
+
+            <a href="https://github.com/Musayrlsms/puzzle-table-privacy/issues"
+               target="_blank"
+               rel="noopener noreferrer">
+                İletişim için musa.yerlesmis.tr@gmail.com
+            </a>
+        </div>
+    </section>
+
+</article>
+</main>
+
+<footer>
+    © 2026 LumaPlay Studio · Puzzle Table
+</footer>
+
+</body>
+</html>
