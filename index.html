@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#101827">
-<meta name="description" content="Puzzle Table gizlilik politikası.">
-<title>Gizlilik Politikası | Puzzle Table</title>
+<meta name="description" content="Puzzle Table gizlilik politikası / Privacy Policy.">
+<title>Gizlilik Politikası | Privacy Policy | Puzzle Table</title>
 
 <style>
 * {
@@ -23,18 +22,65 @@ body {
     line-height: 1.8;
 }
 
+/* Language switching */
+body[data-lang="tr"] .en { display: none !important; }
+body[data-lang="en"] .tr { display: none !important; }
+
 .hero {
     background:
         radial-gradient(circle at 80% 5%, #403a7d, transparent 35%),
         #101827;
     color: white;
-    padding: 65px 20px 85px;
+    padding: 28px 20px 85px;
 }
 
 .container {
     max-width: 850px;
     width: calc(100% - 36px);
     margin: auto;
+}
+
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 26px;
+}
+
+.lang-switch {
+    display: inline-flex;
+    border: 1px solid #ffffff40;
+    border-radius: 30px;
+    padding: 3px;
+    background: #ffffff10;
+}
+
+.lang-switch button {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: #d6d9e5;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 6px 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+.lang-switch button:hover {
+    color: white;
+}
+
+.lang-switch button.active {
+    background: #746cf0;
+    color: white;
+}
+
+.lang-switch button:focus-visible {
+    outline: 2px solid #c9c6ff;
+    outline-offset: 2px;
 }
 
 .brand {
@@ -138,6 +184,15 @@ p {
     margin-bottom: 10px;
 }
 
+ul {
+    margin: 0 0 10px 22px;
+    color: #475467;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
 a {
     color: #655ce2;
     text-decoration: none;
@@ -165,7 +220,7 @@ footer {
 
 @media(max-width: 520px) {
     .hero {
-        padding-top: 45px;
+        padding-top: 22px;
     }
 
     .content {
@@ -175,10 +230,17 @@ footer {
 </style>
 </head>
 
-<body>
+<body data-lang="tr">
 
 <header class="hero">
     <div class="container">
+
+        <div class="topbar">
+            <div class="lang-switch" role="group" aria-label="Dil / Language">
+                <button type="button" data-set-lang="tr" class="active" aria-pressed="true">TR</button>
+                <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+            </div>
+        </div>
 
         <div class="brand">
             <div class="logo">🧩</div>
@@ -187,17 +249,25 @@ footer {
 
         <div class="eyebrow">LumaPlay Studio</div>
 
-        <h1>Gizlilik Politikası</h1>
+        <h1>
+            <span class="tr">Gizlilik Politikası</span>
+            <span class="en">Privacy Policy</span>
+        </h1>
 
-        <p class="intro">
+        <p class="intro tr">
             Puzzle Table uygulamasını kullanırken bilgilerinizin
-            nasıl işlendiğini ve oyun verilerinizin nasıl
-            korunduğunu açıklıyoruz.
+            nasıl işlendiğini, reklam ve satın alma hizmetlerinin
+            hangi verileri kullanabileceğini ve oyun verilerinizin
+            nasıl korunduğunu açıklıyoruz.
+        </p>
+        <p class="intro en">
+            This policy explains how your information is handled when
+            you use Puzzle Table, what data advertising and purchase
+            services may use, and how your game data is protected.
         </p>
 
-        <span class="date">
-            Son güncelleme: 3 Kasım 2026
-        </span>
+        <span class="date tr">Son güncelleme: 10 Kasım 2026</span>
+        <span class="date en">Last updated: November 10, 2026</span>
 
     </div>
 </header>
@@ -207,110 +277,321 @@ footer {
 
     <div class="summary">
         <span>🔒</span>
-        <p>
+        <p class="tr">
             <strong>Kısaca:</strong>
-            Puzzle Table oyun ilerlemenizi ve tercihlerinizi
-            cihazınızda saklar. Bu bilgiler tarafımızdan bir
-            sunucuya gönderilmez veya üçüncü taraflarla paylaşılmaz.
+            Oyun ilerlemeniz ve tercihleriniz cihazınızda saklanır;
+            bunları tarafımızdan bir sunucuya göndermeyiz. Uygulama,
+            Google AdMob aracılığıyla reklam gösterir ve uygulama içi
+            satın alma sunar. Bu üçüncü taraf hizmetler, kendi gizlilik
+            politikaları kapsamında bazı verileri toplayabilir.
+        </p>
+        <p class="en">
+            <strong>In short:</strong>
+            Your game progress and preferences are stored on your
+            device, and we do not send them to a server. The app shows
+            ads through Google AdMob and offers in-app purchases. These
+            third-party services may collect certain data under their
+            own privacy policies.
         </p>
     </div>
 
+    <!-- 1 -->
     <section>
-        <h2>1. Hangi Veriler Saklanır?</h2>
+        <h2 class="tr">1. Hangi Veriler Saklanır?</h2>
+        <h2 class="en">1. What Data Is Stored?</h2>
 
-        <p>
+        <p class="tr">
             Uygulama; oyun ilerlemesi, tamamlanan bulmacalar ve
             uygulama tercihleri gibi oyunun çalışması için gerekli
             bilgileri cihazınızda yerel olarak saklayabilir.
         </p>
+        <p class="en">
+            The app may store information needed for the game to work,
+            such as game progress, completed puzzles and app
+            preferences, locally on your device.
+        </p>
 
-        <p>
-            Puzzle Table mevcut sürümünde kullanıcı hesabı
-            oluşturmanızı istemez ve ad, soyad, e-posta adresi
-            veya telefon numarası gibi bilgileri doğrudan talep etmez.
+        <p class="tr">
+            Puzzle Table, kullanıcı hesabı oluşturmanızı istemez ve ad,
+            soyad, e-posta adresi veya telefon numarası gibi bilgileri
+            doğrudan talep etmez.
+        </p>
+        <p class="en">
+            Puzzle Table does not require you to create an account and
+            does not directly ask for information such as your name,
+            email address or phone number.
         </p>
     </section>
 
+    <!-- 2 -->
     <section>
-        <h2>2. Veriler Nasıl Kullanılır?</h2>
+        <h2 class="tr">2. Reklamlar (Google AdMob)</h2>
+        <h2 class="en">2. Advertising (Google AdMob)</h2>
 
-        <p>
+        <p class="tr">
+            Puzzle Table, reklam göstermek için Google AdMob hizmetini
+            kullanır. AdMob, reklamları sunmak, reklam performansını
+            ölçmek, dolandırıcılığı önlemek ve hizmeti geliştirmek
+            amacıyla cihazınızdan bazı verileri otomatik olarak
+            toplayabilir. Bunlar şunları içerebilir:
+        </p>
+        <p class="en">
+            Puzzle Table uses Google AdMob to show ads. To deliver ads,
+            measure ad performance, prevent fraud and improve its
+            service, AdMob may automatically collect certain data from
+            your device. This may include:
+        </p>
+
+        <ul class="tr">
+            <li>Reklam kimliği gibi cihaz veya reklam tanımlayıcıları</li>
+            <li>IP adresi ve buna bağlı yaklaşık konum bilgisi</li>
+            <li>Cihaz ve uygulama bilgileri (cihaz modeli, işletim sistemi sürümü, uygulama sürümü)</li>
+            <li>Reklamlarla etkileşim verileri (görüntüleme, tıklama)</li>
+            <li>Çökme ve tanılama verileri</li>
+        </ul>
+        <ul class="en">
+            <li>Device or advertising identifiers, such as the advertising ID</li>
+            <li>IP address and the approximate location derived from it</li>
+            <li>Device and app information (device model, OS version, app version)</li>
+            <li>Ad interaction data (impressions, clicks)</li>
+            <li>Crash and diagnostic data</li>
+        </ul>
+
+        <p class="tr">
+            Bu verileri Google, kendi gizlilik politikasına göre
+            işler. Daha fazla bilgi için
+            <a href="https://policies.google.com/technologies/partner-sites"
+               target="_blank" rel="noopener noreferrer">Google'ın iş
+               ortağı sitelerinde ve uygulamalarında verileri nasıl
+               kullandığı</a> sayfasına bakabilirsiniz.
+        </p>
+        <p class="en">
+            Google processes this data under its own privacy policy.
+            For more information, see
+            <a href="https://policies.google.com/technologies/partner-sites"
+               target="_blank" rel="noopener noreferrer">How Google uses
+               information from sites or apps that use its services</a>.
+        </p>
+
+        <p class="tr">
+            Reklam kişiselleştirmesini cihaz ayarlarınızdan
+            yönetebilirsiniz: Android'de Ayarlar'daki Google reklam
+            ayarlarından reklam kişiselleştirmesini kapatabilir veya
+            reklam kimliğinizi sıfırlayabilirsiniz; iPhone'da ise
+            Ayarlar'daki Gizlilik ve Güvenlik bölümünden Takip iznini
+            yönetebilirsiniz. Menü adları cihaz ve sürüme göre
+            değişebilir.
+        </p>
+        <p class="en">
+            You can manage ad personalization in your device settings:
+            on Android, you can turn off ad personalization or reset
+            your advertising ID in Google's ad settings; on iPhone, you
+            can manage tracking permission under Privacy &amp; Security
+            in Settings. Menu names may vary by device and version.
+        </p>
+    </section>
+
+    <!-- 3 -->
+    <section>
+        <h2 class="tr">3. Uygulama İçi Satın Almalar</h2>
+        <h2 class="en">3. In-App Purchases</h2>
+
+        <p class="tr">
+            Puzzle Table uygulama içi satın alma sunabilir. Satın alma
+            işlemleri Google Play veya Apple App Store tarafından
+            yürütülür. Kredi kartı veya ödeme bilgilerinizi
+            tarafımız almaz ve saklamaz. Satın aldığınız içeriği
+            açabilmek için yalnızca satın almanın tamamlandığına dair
+            onay bilgisini kullanırız.
+        </p>
+        <p class="en">
+            Puzzle Table may offer in-app purchases. Purchases are
+            processed by Google Play or the Apple App Store. We do not
+            receive or store your credit card or payment details. To
+            unlock what you bought, we only use the confirmation that
+            the purchase was completed.
+        </p>
+
+        <p class="tr">
+            Satın alma verileriniz ilgili mağazanın gizlilik politikası
+            kapsamında işlenir.
+        </p>
+        <p class="en">
+            Your purchase data is handled under the privacy policy of
+            the relevant store.
+        </p>
+    </section>
+
+    <!-- 4 -->
+    <section>
+        <h2 class="tr">4. Veriler Nasıl Kullanılır?</h2>
+        <h2 class="en">4. How Is Data Used?</h2>
+
+        <p class="tr">
             Cihazınızda saklanan oyun verileri yalnızca oyun
             ilerlemenizi korumak ve uygulama tercihlerinizi
             hatırlamak amacıyla kullanılır. Bu veriler tarafımızdan
             uzaktaki sunuculara aktarılmaz.
         </p>
-    </section>
+        <p class="en">
+            Game data stored on your device is used only to keep your
+            progress and remember your app preferences. We do not
+            transfer this data to remote servers.
+        </p>
 
-    <section>
-        <h2>3. Verilerin Paylaşılması</h2>
-
-        <p>
-            Uygulama tarafından yerel olarak saklanan oyun verileri
-            tarafımızdan üçüncü taraflara satılmaz veya paylaşılmaz.
-            Uygulamanın ileride yeni hizmetler ya da üçüncü taraf
-            yazılım bileşenleri kullanması durumunda bu politika
-            ilgili değişiklikleri yansıtacak şekilde güncellenir.
+        <p class="tr">
+            Reklam ve satın alma hizmetleri tarafından toplanan
+            veriler ise bu hizmetleri sunan şirketler tarafından, kendi
+            politikalarına göre kullanılır.
+        </p>
+        <p class="en">
+            Data collected by advertising and purchase services is used
+            by the companies providing them, under their own policies.
         </p>
     </section>
 
+    <!-- 5 -->
     <section>
-        <h2>4. Verilerin Saklanması ve Silinmesi</h2>
+        <h2 class="tr">5. Verilerin Paylaşılması</h2>
+        <h2 class="en">5. Sharing of Data</h2>
 
-        <p>
+        <p class="tr">
+            Cihazınızda yerel olarak saklanan oyun verilerinizi
+            tarafımız satmaz ve üçüncü taraflarla paylaşmaz.
+        </p>
+        <p class="en">
+            We do not sell or share the game data stored locally on
+            your device with third parties.
+        </p>
+
+        <p class="tr">
+            Ancak uygulama, yukarıda açıklanan üçüncü taraf hizmetleri
+            (Google AdMob ile Google Play / Apple App Store) kullanır.
+            Bu hizmetler, uygulamayı kullanırken bazı verileri
+            doğrudan cihazınızdan toplayabilir. Bu veri toplama
+            ilgili şirketlerin kendi gizlilik politikalarına tabidir.
+            Uygulamaya yeni hizmetler eklenirse bu politika
+            güncellenir.
+        </p>
+        <p class="en">
+            However, the app uses the third-party services described
+            above (Google AdMob and Google Play / Apple App Store).
+            These services may collect certain data directly from your
+            device while you use the app. This collection is subject to
+            those companies' own privacy policies. If new services are
+            added to the app, this policy will be updated.
+        </p>
+    </section>
+
+    <!-- 6 -->
+    <section>
+        <h2 class="tr">6. Verilerin Saklanması ve Silinmesi</h2>
+        <h2 class="en">6. Data Retention and Deletion</h2>
+
+        <p class="tr">
             Oyun verileri cihazınızda tutulur. Uygulama verilerini
             cihazınızın ayarlarından temizleyerek veya uygulamayı
             kaldırarak bu yerel kayıtları silebilirsiniz.
         </p>
+        <p class="en">
+            Game data is kept on your device. You can delete these
+            local records by clearing the app's data in your device
+            settings or by uninstalling the app.
+        </p>
+
+        <p class="tr">
+            Reklam hizmetlerinin topladığı verilerin silinmesi veya
+            kontrolü için Google hesabınızın ve cihazınızın reklam
+            ayarlarını kullanabilirsiniz.
+        </p>
+        <p class="en">
+            To control or delete data collected by advertising
+            services, you can use the ad settings of your Google
+            account and your device.
+        </p>
     </section>
 
+    <!-- 7 -->
     <section>
-        <h2>5. Veri Güvenliği</h2>
+        <h2 class="tr">7. Veri Güvenliği</h2>
+        <h2 class="en">7. Data Security</h2>
 
-        <p>
+        <p class="tr">
             Oyun kayıtları uygulamanın yerel depolama alanında
             tutulur. Cihazınızın ekran kilidi ve güvenlik ayarlarını
             kullanmanızı öneririz. Cihazınıza erişimi olan kişilerin
             cihazda tutulan verilere erişebileceğini unutmayın.
         </p>
-    </section>
-
-    <section>
-        <h2>6. Çocukların Gizliliği</h2>
-
-        <p>
-            Puzzle Table, çocuklardan bilerek kişisel bilgi
-            toplamak amacıyla tasarlanmamıştır. Uygulamanın hedef
-            kitlesi veya özellikleri değişirse çocuklara ilişkin
-            geçerli platform gereklilikleri ayrıca değerlendirilir.
+        <p class="en">
+            Game records are kept in the app's local storage. We
+            recommend using your device's screen lock and security
+            settings. Please note that people who have access to your
+            device may be able to access the data stored on it.
         </p>
     </section>
 
+    <!-- 8 -->
     <section>
-        <h2>7. Gizlilik Politikası Değişiklikleri</h2>
+        <h2 class="tr">8. Çocukların Gizliliği</h2>
+        <h2 class="en">8. Children's Privacy</h2>
 
-        <p>
+        <p class="tr">
+            Puzzle Table, çocuklardan bilerek kişisel bilgi
+            toplamak amacıyla tasarlanmamıştır ve 13 yaşın altındaki
+            çocuklara yönelik değildir. Bir çocuğun bize kişisel
+            bilgi verdiğini fark ederseniz bizimle iletişime
+            geçebilirsiniz.
+        </p>
+        <p class="en">
+            Puzzle Table is not designed to knowingly collect personal
+            information from children and is not directed at children
+            under 13. If you believe a child has given us personal
+            information, please contact us.
+        </p>
+    </section>
+
+    <!-- 9 -->
+    <section>
+        <h2 class="tr">9. Gizlilik Politikası Değişiklikleri</h2>
+        <h2 class="en">9. Changes to This Policy</h2>
+
+        <p class="tr">
             Uygulamanın özellikleri veya veri işleme yöntemleri
             değişirse bu Gizlilik Politikası güncellenebilir.
             Güncel sürüm bu web sayfasında yayımlanır.
         </p>
+        <p class="en">
+            This Privacy Policy may be updated if the app's features
+            or data practices change. The current version is published
+            on this web page.
+        </p>
     </section>
 
+    <!-- 10 -->
     <section>
-        <h2>8. İletişim</h2>
+        <h2 class="tr">10. İletişim</h2>
+        <h2 class="en">10. Contact</h2>
 
-        <p>
+        <p class="tr">
             Bu politika veya gizlilik uygulamalarımız hakkında
             sorularınız varsa geliştiriciyle iletişime geçebilirsiniz.
+        </p>
+        <p class="en">
+            If you have questions about this policy or our privacy
+            practices, you can contact the developer.
         </p>
 
         <div class="contact">
             <strong>LumaPlay Studio</strong><br>
 
+            <a href="mailto:musa.yerlesmis.tr@gmail.com">
+                musa.yerlesmis.tr@gmail.com
+            </a><br>
+
             <a href="https://github.com/Musayrlsms/puzzle-table-privacy/issues"
                target="_blank"
                rel="noopener noreferrer">
-                İletişim için musa.yerlesmis.tr@gmail.com
+                GitHub Issues
             </a>
         </div>
     </section>
@@ -321,6 +602,50 @@ footer {
 <footer>
     © 2026 LumaPlay Studio · Puzzle Table
 </footer>
+
+<script>
+(function () {
+    var body = document.body;
+    var buttons = document.querySelectorAll('[data-set-lang]');
+
+    function setLang(lang, save) {
+        if (lang !== 'tr' && lang !== 'en') lang = 'tr';
+        body.setAttribute('data-lang', lang);
+        document.documentElement.setAttribute('lang', lang);
+        document.title = lang === 'en'
+            ? 'Privacy Policy | Puzzle Table'
+            : 'Gizlilik Politikası | Puzzle Table';
+        for (var i = 0; i < buttons.length; i++) {
+            var active = buttons[i].getAttribute('data-set-lang') === lang;
+            buttons[i].classList.toggle('active', active);
+            buttons[i].setAttribute('aria-pressed', active ? 'true' : 'false');
+        }
+        if (save) {
+            try { localStorage.setItem('pt-lang', lang); } catch (e) {}
+        }
+    }
+
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function () {
+            setLang(this.getAttribute('data-set-lang'), true);
+        });
+    }
+
+    var initial = null;
+    try {
+        var q = new URLSearchParams(window.location.search).get('lang');
+        if (q === 'tr' || q === 'en') initial = q;
+    } catch (e) {}
+    if (!initial) {
+        try { initial = localStorage.getItem('pt-lang'); } catch (e) {}
+    }
+    if (!initial) {
+        var nav = (navigator.language || 'tr').toLowerCase();
+        initial = nav.indexOf('tr') === 0 ? 'tr' : 'en';
+    }
+    setLang(initial, false);
+})();
+</script>
 
 </body>
 </html>
